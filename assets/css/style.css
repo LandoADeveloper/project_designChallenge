@@ -1,0 +1,195 @@
+/*==================================================== 
+    imports
+====================================================*/
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+/*==================================================== 
+   General Settings
+====================================================*/
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  scroll-behavior: smooth;
+}
+
+a, h1, h2, p {
+  font-family: "Roboto-regular";
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+/*==================================================== 
+    Header
+====================================================*/
+header {
+  padding: 5vh 5vw;
+}
+header div.logo {
+  display: flex;
+}
+header div.logo img {
+  width: 40px;
+}
+header div.logo p {
+  margin-left: 10px;
+  width: 140px;
+}
+header div.logo p:first-line {
+  font-size: 1.5rem;
+}
+@keyframes falling {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+header div.animation img.animationBackground {
+  width: 60%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: -1;
+}
+header div.animation img.animationPerson {
+  width: 60%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: 1;
+  animation-name: falling;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+header div.headline {
+  margin: 30vh 10vw;
+}
+header div.headline h1 {
+  font-size: 4rem;
+  width: 450px;
+  margin-bottom: 2vh;
+}
+header div.headline p {
+  font-family: "Roboto-thin";
+  width: 450px;
+}
+header a {
+  display: block;
+  margin: 10vh 10vw;
+  text-decoration: none;
+  color: #ff3571;
+}
+
+/*==================================================== 
+    Main
+====================================================*/
+main {
+  width: 90%;
+  margin: auto;
+}
+main section.designProjects img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+main section.ideasStartWith {
+  margin: 20vh 0vw;
+  display: flex;
+  justify-content: space-around;
+}
+main section.ideasStartWith h2 {
+  width: 300px;
+}
+main section.ideasStartWith h2 img {
+  width: 30px;
+}
+main section.ideasStartWith p {
+  font-size: 1.2rem;
+  width: 50%;
+}
+main section.learningALot {
+  margin: 20vh 0;
+}
+main section.learningALot h2 {
+  width: 600px;
+  margin-left: 6vw;
+}
+main section.learningALot div.learnedGrid {
+  margin: 10vh auto;
+  width: fit-content;
+  gap: 100px 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main section.learningALot div.learnedGrid article {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  margin: 2vh 0;
+}
+main section.learningALot div.learnedGrid article img {
+  width: 30px;
+}
+main section.learningALot div.learnedGrid article div h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main section.learningALot div.learnedGrid article div p {
+  width: 300px;
+}
+main section.letsGo {
+  margin: 20vh 0;
+}
+main section.letsGo h2 {
+  margin: auto;
+  width: fit-content;
+}
+main section.letsGo p {
+  text-align: center;
+  width: 450px;
+  margin: 2vh auto;
+}
+main section.letsGo div.steps {
+  margin: 15vh auto;
+}
+main section.letsGo div.steps div.step {
+  margin: 5vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main section.letsGo div.steps div.step img {
+  width: 30%;
+}
+main section.letsGo div.steps div.step article img {
+  width: 30px;
+}
+main section.letsGo div.steps div.step article p {
+  text-align: left;
+}
+main section.letsGo div.steps div.step:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+/*# sourceMappingURL=style.css.map */
