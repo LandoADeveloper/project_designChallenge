@@ -135,7 +135,7 @@ main {
     section.learningALot {
         margin: 20vh 0;
         h2 {
-            width: 600px;
+            max-width: 600px;
             margin-left: 6vw;
         }
         div.learnedGrid {
@@ -159,7 +159,7 @@ main {
                         margin-bottom: 10px;
                     }
                     p {
-                        width: 300px;
+                        max-width: 300px;
                     }
                 }
             }
@@ -173,7 +173,7 @@ main {
         }
         p {
             text-align: center;
-            width: 450px;
+            max-width: 450px;
             margin:2vh auto;
         }
         div.steps {
@@ -199,6 +199,104 @@ main {
                     flex-direction: row-reverse;
                 }
             }
+        }
+    }
+    section.subscribe {
+        margin: 20vh 0;
+        text-align: center;
+        h2 {
+            margin: 5vh auto;
+            width: fit-content;
+        }
+        p {
+            margin: 5vh auto;
+            width: fit-content;
+        }
+        form {
+            input {
+                display: block;
+                margin: 2vh auto;
+                width: fit-content;
+            }
+            input[type="email"] {
+                border: none;
+                padding: 3vh 10vw;
+                border-radius: 5px;
+                box-shadow: 0px 0px 20px #dddddd;
+                text-align: center;
+                font-family: 'Roboto';
+            }
+            input[type="submit"] {
+                border: none;
+                padding: 2vh 5vw;
+                color: #FFF;
+                background-color: #ff3571;
+                border-radius: 5px;
+                &:hover {
+                    background-image: linear-gradient(90deg,#ff3571 20%,#3C30FF 80% );
+                }
+            }
+        }
+    }
+}
+/*==================================================== 
+    Footer
+====================================================*/
+
+footer {
+    padding: 5vh 5vw;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    img {
+        width: 30px;
+    }
+}
+
+/*==================================================== 
+    Media Queries
+====================================================*/
+
+@media only screen and (max-width:564px) {
+    h2 {
+        font-size: 2rem;
+    }
+    header {
+        div.headline{
+            h1 {
+                font-size: 3rem;
+                word-wrap: break-word;
+                
+            }
+        }
+    }
+    main {
+        section.ideasStartWith {
+            flex-wrap: wrap;
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 5vh;
+
+            }
+            p {
+                width: 90%;
+            }
+        }
+        section.learningALot {
+            div.learnedGrid {
+                grid-template-columns: 1fr;
+            }
+        }
+        section.letsGo {
+            div.steps{
+                div.step {
+                    flex-direction: column;
+                    &:nth-of-type(even) {
+                        flex-direction: column;
+                    }
+                }
+                
+            } 
         }
     }
 }

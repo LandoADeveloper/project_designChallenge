@@ -131,7 +131,7 @@ main section.learningALot {
   margin: 20vh 0;
 }
 main section.learningALot h2 {
-  width: 600px;
+  max-width: 600px;
   margin-left: 6vw;
 }
 main section.learningALot div.learnedGrid {
@@ -156,7 +156,7 @@ main section.learningALot div.learnedGrid article div h3 {
   margin-bottom: 10px;
 }
 main section.learningALot div.learnedGrid article div p {
-  width: 300px;
+  max-width: 300px;
 }
 main section.letsGo {
   margin: 20vh 0;
@@ -167,7 +167,7 @@ main section.letsGo h2 {
 }
 main section.letsGo p {
   text-align: center;
-  width: 450px;
+  max-width: 450px;
   margin: 2vh auto;
 }
 main section.letsGo div.steps {
@@ -190,6 +190,86 @@ main section.letsGo div.steps div.step article p {
 }
 main section.letsGo div.steps div.step:nth-of-type(even) {
   flex-direction: row-reverse;
+}
+main section.subscribe {
+  margin: 20vh 0;
+  text-align: center;
+}
+main section.subscribe h2 {
+  margin: 5vh auto;
+  width: fit-content;
+}
+main section.subscribe p {
+  margin: 5vh auto;
+  width: fit-content;
+}
+main section.subscribe form input {
+  display: block;
+  margin: 2vh auto;
+  width: fit-content;
+}
+main section.subscribe form input[type=email] {
+  border: none;
+  padding: 3vh 10vw;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px #dddddd;
+  text-align: center;
+  font-family: "Roboto";
+}
+main section.subscribe form input[type=submit] {
+  border: none;
+  padding: 2vh 5vw;
+  color: #FFF;
+  background-color: #ff3571;
+  border-radius: 5px;
+}
+main section.subscribe form input[type=submit]:hover {
+  background-image: linear-gradient(90deg, #ff3571 20%, #3C30FF 80%);
+}
+
+/*==================================================== 
+    Footer
+====================================================*/
+footer {
+  padding: 5vh 5vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+footer img {
+  width: 30px;
+}
+
+/*==================================================== 
+    Media Queries
+====================================================*/
+@media only screen and (max-width: 564px) {
+  h2 {
+    font-size: 2rem;
+  }
+  header div.headline h1 {
+    font-size: 3rem;
+    word-wrap: break-word;
+  }
+  main section.ideasStartWith {
+    flex-wrap: wrap;
+  }
+  main section.ideasStartWith h2 {
+    font-size: 2rem;
+    margin-bottom: 5vh;
+  }
+  main section.ideasStartWith p {
+    width: 90%;
+  }
+  main section.learningALot div.learnedGrid {
+    grid-template-columns: 1fr;
+  }
+  main section.letsGo div.steps div.step {
+    flex-direction: column;
+  }
+  main section.letsGo div.steps div.step:nth-of-type(even) {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
