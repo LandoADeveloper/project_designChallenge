@@ -109,6 +109,9 @@ header {
 main {
     width: 90%;
     margin: auto;
+    /*==================================================== 
+    Section designProjects
+====================================================*/
     section.designProjects {
         img {
             width: 100%;
@@ -116,6 +119,9 @@ main {
             margin: auto;
         }
     }
+    /*==================================================== 
+    Section ideasStartWith
+====================================================*/
     section.ideasStartWith {
         margin: 20vh 0vw;
         display: flex;
@@ -132,6 +138,9 @@ main {
             width: 50%;
         }
     }
+    /*==================================================== 
+    Section learningALot
+====================================================*/
     section.learningALot {
         margin: 20vh 0;
         h2 {
@@ -165,6 +174,9 @@ main {
             }
         }
     }
+    /*==================================================== 
+    Section letsGo
+====================================================*/
     section.letsGo {
         margin: 20vh 0;
         h2 {
@@ -201,6 +213,9 @@ main {
             }
         }
     }
+    /*==================================================== 
+    Section subscribe
+====================================================*/
     section.subscribe {
         margin: 20vh 0;
         text-align: center;
